@@ -1,0 +1,58 @@
+module.exports = function (env) {
+  return {
+    HOST: "0.0.0.0",
+    PORT: env.PORT || 8055,
+
+    DB_CLIENT: "pg",
+    DB_HOST: "localhost",
+    DB_PORT: 5432,
+
+    PUBLIC_URL: "/",
+
+    DB_CLIENT: "pg",
+    DB_HOST: "us-east-1.sql.xata.sh",
+    DB_PORT: "5432",
+    DB_DATABASE: "xatadirectus:main",
+    DB_USER: "2k4epc",
+    DB_PASSWORD: "xau_sHcg0R5y6IAer6uQii2lQz3O53I0RKzU0",
+    DB_SSL: "true",
+
+    RATE_LIMITER_ENABLED: false,
+    RATE_LIMITER_STORE: "memory",
+    RATE_LIMITER_POINTS: 25,
+    RATE_LIMITER_DURATION: 1,
+
+    CACHE_ENABLED: false,
+    CACHE_STORE: "memory",
+    ASSETS_CACHE_TTL: "30d",
+    STORAGE_LOCATIONS: "local",
+    STORAGE_LOCAL_DRIVER: "local",
+    STORAGE_LOCAL_ROOT: "./uploads",
+    KEY: "f872e2fe-20df-434d-991f-8014d63d5b69",
+    SECRET: "31I--hsz976GiOvmXR0qitgi5OLpiwB6",
+    ACCESS_TOKEN_TTL: "15m",
+    REFRESH_TOKEN_TTL: "7d",
+    REFRESH_TOKEN_COOKIE_SECURE: false,
+    REFRESH_TOKEN_COOKIE_SAME_SITE: "lax",
+    REFRESH_TOKEN_COOKIE_NAME: "directus_refresh_token",
+    SESSION_COOKIE_TTL: "1d",
+    SESSION_COOKIE_SECURE: false,
+    SESSION_COOKIE_SAME_SITE: "lax",
+    SESSION_COOKIE_NAME: "directus_session_token",
+    CORS_ENABLED: true,
+    CORS_ORIGIN: true,
+    CORS_METHODS: "GET, POST, PATCH, DELETE",
+    CORS_ALLOWED_HEADERS: "Content-Type, Authorization",
+    CORS_EXPOSED_HEADERS: "Content-Range",
+    CORS_CREDENTIALS: true,
+    CORS_MAX_AGE: 18000,
+    AUTH_PROVIDERS: "",
+    EXTENSIONS_PATH: "./extensions",
+    EXTENSIONS_AUTO_RELOAD: false,
+    EMAIL_FROM: "no-reply@example.com",
+    EMAIL_TRANSPORT: "sendmail",
+    EMAIL_SENDMAIL_NEW_LINE: "unix",
+    EMAIL_SENDMAIL_PATH: "/usr/sbin/sendmail",
+    // etc
+  };
+};
